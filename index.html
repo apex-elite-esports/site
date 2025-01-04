@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX ELITE | Киберспортивная команда</title>
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="icon" type="image/x-icon" href="images/favicon/Логотип.ico">
+</head>
+<body>
+    <!-- Прелоадер -->
+    <div class="preloader">
+        <img src="images/logo/Логотип.png" alt="Loading...">
+    </div>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo/Логотип.png" alt="APEX ELITE">
+            </a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="pages/team.html">Состав</a></li>
+                <li><a href="pages/achievements.html">Достижения</a></li>
+                <li><a href="pages/news.html">Новости</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Главная секция -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <img src="images/logo/Логотип.png" alt="APEX ELITE" class="hero-logo">
+                <h1>APEX ELITE</h1>
+                <p>CYBER SPORT TEAM</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Турниров</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="10">0</span>
+                        <span class="stat-label">Побед</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="1000000">0</span>
+                        <span class="stat-label">Призовых</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция новостей -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <!-- Новости команды -->
+            <div class="news-block team-news">
+                <h2 class="section-title">Новости команды</h2>
+                <div class="news-grid" id="teamNews">
+                    <!-- Будет заполнено через JavaScript -->
+                </div>
+                <div class="news-actions">
+                    <a href="team-news.html" class="custom-button">Все новости команды</a>
+                </div>
+            </div>
+
+            <!-- Новости Standoff 2 -->
+            <div class="news-block game-news">
+                <h2 class="section-title">Новости Standoff 2</h2>
+                <div class="news-grid" id="gameNews">
+                    <!-- Будет заполнено через JavaScript -->
+                </div>
+                <div class="news-actions">
+                    <a href="game-news.html" class="custom-button">Все новости игры</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo/Логотип.png" alt="APEX ELITE">
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-discord"></i></a>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Условия использования</a>
+                    <a href="#">Контакты</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 APEX ELITE. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для игрока -->
+    <div class="modal" id="playerModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Содержимое будет добавлено через JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Скрипты -->
+    <script src="js/team.js"></script>
+    <script src="js/achievements.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
